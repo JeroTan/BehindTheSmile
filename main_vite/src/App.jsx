@@ -5,16 +5,22 @@ import { Routes, Route} from 'react-router-dom';
 //-- Import My Components --//
 import {Routing} from './utilities/Routing.jsx';
 
-function App() {
+export default ()=>
+<>
+  <Routes>
+  {Object.keys(Routing()).map( (item)=> 
+    <>
+      <Route path={Routing()[item]['path']} element={Routing()[item]['link']} />
+    </>
+  )}
+  </Routes>
+</>;
 
-  const rendering = <>
-  <h2></h2>
-    <Routes>
-      <Route path={Routing().home['path']} element={Routing().home['link']} />
-    </Routes>
-  </>
-
-  return rendering;
-}
-
-export default App
+/*
+export default ()=>
+<>
+  <Routes>
+    <Route path={Routing().home['path']} element={Routing().home['link']} />
+  </Routes>
+</>;
+*/
