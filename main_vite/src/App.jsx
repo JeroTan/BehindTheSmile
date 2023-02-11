@@ -4,15 +4,16 @@ import { Routes, Route} from 'react-router-dom';
 
 //-- Import My Components --//
 import {Routing} from './utilities/Routing.jsx';
+const routerList = Object.keys(Routing()).map( (item)=> 
+  <>
+    <Route path={Routing()[item]['path']} element={Routing()[item]['link']} />
+  </>
+)
 
 export default ()=>
 <>
   <Routes>
-  {Object.keys(Routing()).map( (item)=> 
-    <>
-      <Route path={Routing()[item]['path']} element={Routing()[item]['link']} />
-    </>
-  )}
+    {routerList}
   </Routes>
 </>;
 
