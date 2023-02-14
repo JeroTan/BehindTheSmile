@@ -34,16 +34,16 @@ export default ()=>{
                     <h4 class="font-light pb-2">Follow our page</h4>
                 </div>
                 <div class="flex flex-wrap gap-5">
-                    <div class="cursor-pointer" onClick={()=>window.open('https://www.youtube.com/@genesys_designs', '_blank')}>
+                    <div class="cursor-pointer" onClick={()=>window.open('https://www.facebook.com/profile.php?id=100087153815957&mibextid=ZbWKwL', '_blank')}>
                         <Icon name='facebook' size='1.5' tailwindClass='fill-white'/>
                     </div>
-                    <div class="cursor-pointer" onClick={()=>window.open('https://www.youtube.com/@genesys_designs', '_blank')}>
+                    <div class="cursor-pointer" onClick={()=>window.open('https://www.instagram.com', '_blank')}>
                     <Icon name='instagram' size='1.5' tailwindClass='fill-white'/>
                     </div>
                     <div class="cursor-pointer" onClick={()=>window.open('https://www.youtube.com/@genesys_designs', '_blank')}>
                         <Icon name='youtube' size='1.5' tailwindClass='fill-white'/>
                     </div>
-                    <div class="cursor-pointer" onClick={()=>window.open('https://www.youtube.com/@genesys_designs', '_blank')}>
+                    <div class="cursor-pointer" onClick={()=>window.open('https://www.twitter.com', '_blank')}>
                         <Icon name='twitter' size='1.5' tailwindClass='fill-white'/>
                     </div>
                 </div>

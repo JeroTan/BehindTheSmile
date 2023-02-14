@@ -1,0 +1,12 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.myNew:after{
+    position: absolute;
+    right: -5px;
+    top: 0px;
+    content: 'BONUS';
+    transform: translate(100%, 0%);
+    @apply bg-teal-400 rounded-lg text-white font-sans p-1 text-sm;
+}
