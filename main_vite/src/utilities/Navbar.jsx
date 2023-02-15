@@ -16,10 +16,13 @@ const vrt_pageHighlight = (page)=>{
             vrt.links.home = 'underline underline-offset-4 decoration-2 decoration-teal-400';
         break;
         case 'learn':
+            vrt.links.learn = 'underline underline-offset-4 decoration-2 decoration-teal-400';
         break;
         case 'discover':
+            vrt.links.discover = 'underline underline-offset-4 decoration-2 decoration-teal-400';
         break;
         case 'about':
+            vrt.links.about = 'underline underline-offset-4 decoration-2 decoration-teal-400';
         break;
     }
 
