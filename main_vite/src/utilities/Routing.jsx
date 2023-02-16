@@ -13,55 +13,59 @@ import About from '../pages/About.jsx';
 import Discover from '../pages/Discover.jsx';
 import NotFound from '../pages/NotFound.jsx';
 
-export const Routing = ()=>{
-    return {
-        home:{
-            link:<Home/>,
-            path:'/'
-        },
-        home2:{
-            link:<Home/>,
-            path:'/home'
-        },
-        learn:{
-            link:<Learn />,
-            path:'/learn'
-        },
-        learn1:{
-            link:<Learn1 />,
-            path:'/learn/m1'
-        },
-        learn2:{
-            link:<Learn2 />,
-            path:'/learn/m2'
-        },
-        learn3:{
-            link:<Learn3 />,
-            path:'/learn/m3'
-        },
-        learn4:{
-            link:<Learn4 />,
-            path:'/learn/m4'
-        },
-        learn5:{
-            link:<Learn5 />,
-            path:'/learn/m5'
-        },
-        learn6:{
-            link:<Learn6 />,
-            path:'/learn/m6'
-        },
-        discover:{
-            link:<Discover />,
-            path:'/discover'
-        },
-        about:{
-            link:<About />,
-            path:'/about'
-        },
-        e_404:{
-            link:<NotFound />,
-            path:'*'
-        }
+import {createBrowserRouter, RouterProvider} from 'react-router-dom';
+
+const router = createBrowserRouter([
+    {
+        element:<Home/>,
+        path:'/'
+    },
+    {
+        element:<Home/>,
+        path:'/home'
+    },
+    {
+        element:<Learn />,
+        path:'/learn'
+    },
+    {
+        element:<Learn1 />,
+        path:'/learn/m1'
+    },
+    {
+        element:<Learn2 />,
+        path:'/learn/m2'
+    },
+    {
+        element:<Learn3 />,
+        path:'/learn/m3'
+    },
+    {
+        element:<Learn4 />,
+        path:'/learn/m4'
+    },
+    {
+        element:<Learn5 />,
+        path:'/learn/m5'
+    },
+    {
+        element:<Learn6 />,
+        path:'/learn/m6'
+    },
+    {
+        element:<Discover />,
+        path:'/discover'
+    },
+    {
+        element:<About />,
+        path:'/about'
+    },
+    {
+        element:<NotFound />,
+        path:'*'
     }
+  ]);
+
+export default ()=>{
+    return  <RouterProvider router={router} />
 };

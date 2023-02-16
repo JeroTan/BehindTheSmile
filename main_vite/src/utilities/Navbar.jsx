@@ -1,5 +1,6 @@
 import { useState } from 'react'
 ///-- Imports Here
+import { Link } from "react-router-dom";
 import Icon from './Icon.jsx';
 
 const vrt_pageHighlight = (page)=>{
@@ -38,10 +39,10 @@ export default ({currentPage})=>{
 
     <header class="fixed w-full h-20 flex items-center bg-gray-200 box-border drop-shadow-md z-40">
         <nav class="sm:flex w-full hidden flex-wrap justify-center">
-            <a class={'text-decoration-none basis-1/6 text-center text-slate-800 '+links.home} href="/home">Home</a>
-            <a class={'text-decoration-none basis-1/6 text-center text-slate-800 '+links.learn} href="/learn">Learn</a>
-            <a class={'text-decoration-none basis-1/6 text-center text-slate-800 '+links.discover} href="/discover">Discover</a>
-            <a class={'text-decoration-none basis-1/6 text-center text-slate-800 '+links.about} href="/about">About</a>
+            <Link to={`/home`} className={`text-decoration-none basis-1/6 text-center text-slate-800 ${links.home}`}>Home</Link>
+            <Link to={`/learn`} className={`text-decoration-none basis-1/6 text-center text-slate-800 ${links.learn}`}>Learn</Link>
+            <Link to={`/discover`} className={`text-decoration-none basis-1/6 text-center text-slate-800 ${links.discover}`}>Discover</Link>
+            <Link to={`/about`} className={`text-decoration-none basis-1/6 text-center text-slate-800 ${links.about}`}>About</Link>
         </nav>
         <nav class="sm:hidden flex w-full justify-end px-3">
             <Icon name='bars' size='2' tailwindClass='fill-teal-400'/>

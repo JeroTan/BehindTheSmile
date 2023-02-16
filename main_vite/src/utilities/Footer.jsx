@@ -1,10 +1,12 @@
 import { useState } from 'react'
 ///-- Imports Here
 import Icon from './Icon.jsx';
+import { Link, useNavigate } from "react-router-dom";
 ///-- Assets Here
 import img_genessys_logo from '../assets/images/genesys_logo.png';
 
 export default ()=>{
+    const navigate = useNavigate();
 
     //// Contents ////
     let rendering = <>
@@ -25,7 +27,7 @@ export default ()=>{
                     <p class="text-sm break-normal font-extralight">
                         This project was made by the team GENESYS. They are a group of researchers, developers and designers, who have a great interest in the digital revolution of leading technology systems, bringing efficient design and creativity to its crafts.
                     </p>
-                    <a href="/about" class="text-sm break-normal font-extralight underline underline-offset-2 decoration-1">Learn More</a>
+                    <Link to={`/about/#`} className={`text-sm break-normal font-extralight underline underline-offset-2 decoration-1`}>Learn more</Link>
                 </div>
             </section>
 

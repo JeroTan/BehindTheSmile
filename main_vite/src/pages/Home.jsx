@@ -3,12 +3,14 @@ import { useState } from 'react'
 import {TitleChanger} from '../utilities/Title.jsx'
 import Navbar from '../utilities/Navbar.jsx'
 import Footer from '../utilities/Footer.jsx'
+import { Link, useNavigate } from "react-router-dom";
 //-- Assets Here --//
 import img_homeBanner from '../assets/images/pl_home.jpg';
 
 const Box_wclick = ({image, text, link})=>{
+    const navigate = useNavigate();
     return <>
-        <div class="relative w-80 box-border aspect-square cursor-pointer" onClick={()=>{location.href=link}}>
+        <div class="relative w-80 box-border aspect-square cursor-pointer" onClick={()=>{ navigate(link)}}>
             <div class="absolute w-full h-full contrast-75 brightness-75 hover:brightness-[0.30] ease-in">
                 <img class="relative w-full h-full object-cover object-center" src={image} />
             </div>
@@ -24,6 +26,7 @@ const Box_wclick = ({image, text, link})=>{
 }
 
 export default ()=>{
+    const navigate = useNavigate();
     
     //// Contents ////
     let rendering = <>
@@ -54,13 +57,13 @@ export default ()=>{
                 <Box_wclick image="https://images.unsplash.com/photo-1511632765486-a01980e01a18?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80" text="Preventive Meassures" link="/learn/m4"/>
             </section>
             <section class="block relative w-auto my-36 mx-10 box-border">
-                <div class="flex justify-center w-full cursor-pointer" onClick={()=>{location.href='/learn/m2'}}>
+                <div class="flex justify-center w-full cursor-pointer" onClick={()=>{ navigate('/learn/m2') }}>
                     <div class="w-[62rem] aspect-video bg-teal-400 overflow-hidden">
                         <img class="relative w-full h-full object-cover object-center" src={img_homeBanner} />
                     </div>
                 </div>
                 <article class="flex justify-center w-full">
-                    <div class="w-[62rem] px-5 pt-10 cursor-pointer" onClick={()=>{location.href='/learn/m2'}}>
+                    <div class="w-[62rem] px-5 pt-10 cursor-pointer" onClick={()=>{ navigate('/learn/m2') }}>
                         <h4 class="text-2xl font-serif pb-2 text-teal-400">Why we feel sadness?</h4>
                         <p class="break-normal font-extralight">
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim illo molestiae nulla, ducimus veniam amet architecto asperiores quibusdam praesentium sunt, commodi iste voluptas illum repudiandae numquam natus vitae repellendus facere?e
@@ -69,13 +72,13 @@ export default ()=>{
                 </article>
             </section>
             <section class="block relative w-auto my-36 mx-10 box-border">
-                <div class="flex justify-center w-full cursor-pointer" onClick={()=>{location.href='/learn/m6'}}>
+                <div class="flex justify-center w-full cursor-pointer" onClick={()=>{ navigate('/learn/m6') }}>
                     <div class="w-[62rem] aspect-video bg-teal-400 overflow-hidden">
                         <img class="relative w-full h-full object-cover object-center" src={img_homeBanner} />
                     </div>
                 </div>
                 <article class="flex justify-center w-full">
-                    <div class="w-[62rem] px-5 pt-10 cursor-pointer" onClick={()=>{location.href='/learn/m6'}}>
+                    <div class="w-[62rem] px-5 pt-10 cursor-pointer" onClick={()=>{ navigate('/learn/m6') }}>
                         <h4 class="text-2xl font-serif pb-2 text-teal-400">Overcome the madness, and preserve the well being</h4>
                         <p class="break-normal font-extralight">
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim illo molestiae nulla, ducimus veniam amet architecto asperiores quibusdam praesentium sunt, commodi iste voluptas illum repudiandae numquam natus vitae repellendus facere?e
