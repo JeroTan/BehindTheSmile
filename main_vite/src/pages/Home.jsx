@@ -66,7 +66,7 @@ export default ()=>{
                     <div class="w-[62rem] px-5 pt-10 cursor-pointer" onClick={()=>{ navigate('/learn/m2') }}>
                         <h4 class="text-2xl font-serif pb-2 text-teal-400">Why we feel sadness?</h4>
                         <p class="break-normal font-extralight">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim illo molestiae nulla, ducimus veniam amet architecto asperiores quibusdam praesentium sunt, commodi iste voluptas illum repudiandae numquam natus vitae repellendus facere?e
+                            We all experience sadness in some part of our lives. It is also one of the most challenging emotions that people deal with. Regardless of the situation, humanity keeps striving and triumphing over what society's expectations put on them.
                         </p>
                     </div>
                 </article>
@@ -81,7 +81,7 @@ export default ()=>{
                     <div class="w-[62rem] px-5 pt-10 cursor-pointer" onClick={()=>{ navigate('/learn/m6') }}>
                         <h4 class="text-2xl font-serif pb-2 text-teal-400">Overcome the madness, and preserve the well being</h4>
                         <p class="break-normal font-extralight">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim illo molestiae nulla, ducimus veniam amet architecto asperiores quibusdam praesentium sunt, commodi iste voluptas illum repudiandae numquam natus vitae repellendus facere?e
+                            It is good to see that someone shares the same interest with you. When you can talk about your experiences, things that you've dealt with, and your achievements to other people. We have this feeling of a sense of relief and at ease that someone is acknowledging your beliefs.
                         </p>
                     </div>
                 </article>
